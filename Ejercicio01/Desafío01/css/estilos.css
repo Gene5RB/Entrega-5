@@ -1,27 +1,40 @@
-body {
-    background-color: white;
+:root{
+
+    --fuente: 'Roboto', sans-serif;
 }
 
 *{
     box-sizing: border-box;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+
+    background-color: white;
+
+}
+
 header{
-    padding: 10px;
+
+    padding: 120px;
+    position: relative;
     background-image: url(../imagenes/fondo\ \(1\).jpg);
-    background-size:cover;
+    box-sizing: content-box;
    
 }
 
 h1 {
-    color: black;
+
     display: inline-block;
+    position: absolute;
     background-color: white;
-    margin:15%;
-    font-family: 'Roboto', sans-serif;
+    left: 30%;
+    top: 30%;
+    padding: 10px 5px;
+    font-family: var(--fuente);
     font-size: 3em;
     font-weight: 900;
-    text-align: center;
     border-radius: 10px;
     mix-blend-mode: screen;
  
@@ -29,9 +42,10 @@ h1 {
 
 h2 {
     color: black;
+    padding: 10px;
     font-size: 2em;
     text-align: left;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fuente);
     
     
 }
@@ -39,19 +53,47 @@ h2 {
 h3 {
     color: black;
     font-size: 2em;
+    padding: 10px;
     text-align: left;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fuente);
     font-weight: 400;
     
     
 }
 
-#img1{
-  size: 100em;
+
+
+ul{
+    display: none;
+    list-style: none;
+    background-color: violet;
+    font-family: var(--fuente);
+    position: absolute;
+    top:0;
+    bottom: 0px;
+    left: 0;
+    right: 30%;
 }
 
-#img2:hover{
-    
+li{
+    padding: 20px;
 }
+
+#container02{
+
+    position: relative;
+    display: inline-block;
+}
+
+
+figure:hover + ul{
+
+   display: block;
+
+}
+
+
+
+
 
 
