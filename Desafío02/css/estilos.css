@@ -1,0 +1,70 @@
+:root{
+    --padding_p: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: white;
+
+}
+
+h1 {
+
+    padding: 20px;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+ 
+}
+
+@keyframes mymove {
+    from {margin-left: 0px;}
+    to {margin-left: 300px;}
+  }
+
+
+.container02{
+
+    width: fit-content;
+    margin: 10px;
+    padding: 20px;
+    border: transparent;
+    height: fit-content;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display:block;
+    animation: move 5s infinite;
+
+}
+
+#p1{
+    background-color: orange;
+    padding: var(--padding_p)
+}
+
+#p2{
+    background-color: palegoldenrod;
+    padding: var(--padding_p)
+}
+
+#p3{
+
+    background-color: pink;
+    padding: var(--padding_p);
+    animation: mymove 5s infinite;
+    animation-iteration-count: 1;
+
+    
+}
+
+
+
+
+
